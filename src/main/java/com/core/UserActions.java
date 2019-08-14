@@ -1,6 +1,7 @@
 package com.core;
 
 import io.appium.java_client.MobileElement;
+import org.openqa.selenium.WebElement;
 
 public class UserActions extends BaseClass {
 
@@ -8,7 +9,7 @@ public class UserActions extends BaseClass {
         return element.getText();
     }
 
-    private void click(MobileElement element) {
+    public void click(WebElement element) {
         element.click();
     }
 

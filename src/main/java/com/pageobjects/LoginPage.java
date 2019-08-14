@@ -17,7 +17,7 @@ public class LoginPage extends UserActions {
 
     public void Login() {
         try {
-            gender.click();
+            click(gender);
 
 
         } catch (Exception e) {

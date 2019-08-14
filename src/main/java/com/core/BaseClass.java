@@ -20,6 +20,7 @@ public class BaseClass {
 
     @BeforeClass
     public void init() throws MalformedURLException {
+
         driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), mobileCapabilities(cap));
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
@@ -30,7 +31,7 @@ public class BaseClass {
         File fs = new File(f, "General-Store.apk");
 
         capabilities.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
-        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiAutomation");
+        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, Access.emulator);
         capabilities.setCapability(MobileCapabilityType.AUTO_WEBVIEW, "true");
         capabilities.setCapability(MobileCapabilityType.FULL_RESET, "true");
