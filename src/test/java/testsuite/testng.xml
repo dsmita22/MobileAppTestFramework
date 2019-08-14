@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="End To End User Journey" allow-return-values="true" parallel="false" thread-count="2">
+
+    <parameter name="grid" value="NO"/>
+    <parameter name="perf" value="NO"/>
+
+    <test name="Ecom test">
+
+        <classes>
+            <class name="com.tests.TC001_FirstTest"/>
+        </classes>
+    </test>
+
+</suite>
